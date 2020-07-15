@@ -39,7 +39,7 @@ load 'vk.rb'
 
         unless !['Male', 'Female', 'Any'].include? @gender 
             puts "******************************"
-            puts "*Welcome to Vk pusy generator*" 
+            puts "*Welcome to Vk scrapper*" 
             puts "******************************" 
             puts
             puts "trying..."
