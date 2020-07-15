@@ -1,0 +1,10 @@
+﻿---
+# change this file regarding to your preferences
+username:   myemail@mail.ru
+password:   p123456
+gender:     Female
+start_age:  18
+end_age:    20
+country:    Russia
+city:       # can be empty
+online:     true # true - search for online profiles, false - otherwise
