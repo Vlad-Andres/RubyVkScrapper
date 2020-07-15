@@ -15,26 +15,6 @@ load 'vk.rb'
     @city = CONFIG["city"]
     @online = CONFIG["online"] # true/false , apply filter 'online now'
 
-    def test
-        fruits = Array.new
-        p1 = {
-            name: "name1",
-            url: "vk.com/dsad"
-        }
-        fruits << p1
-        p2 = {
-            name: "name3",
-            url: "vk.com/ds4ad"
-        }
-        fruits << p2
-        #serialized_array = Marshal.dump(fruits)
-        serialized_array = fruits.to_json
-        File.open('fruits_file.json', 'w') {|f| f.write(serialized_array) }
-        # read the file back
-        fruits = JSON.parse(File.read('fruits_file.json'),{:symbolize_names => true})
-        byebug
-    end
-
     def handler
 
         unless !['Male', 'Female', 'Any'].include? @gender 
